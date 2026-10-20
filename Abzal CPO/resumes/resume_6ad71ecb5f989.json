@@ -1,0 +1,18 @@
+{
+    "personal": {
+        "full_name": "Абдусаттар Абдулхамид",
+        "city": "Алматы, Казахстан",
+        "email": "abzal.abdusattar@student.atu.kz",
+        "phone": "+7 (777) 123-45-67"
+    },
+    "education": {
+        "university": "Алматинский технологический университет (АТУ)",
+        "specialty": "Информационные системы (Группа ИС-24-22)",
+        "graduation_year": "2028"
+    },
+    "experience": {
+        "description": "Младший разработчик \/ Стажер (учебные проекты на PHP, Python, MongoDB, разработка скриптов автоматизации и университетских модулей)."
+    },
+    "skills": "&lt;br \/&gt;\r\n&lt;b&gt;Warning&lt;\/b&gt;:  Array to string conversion in &lt;b&gt;C:\\Users\\админ\\IdeaProjects\\Abzal CPO\\index.php&lt;\/b&gt; on line &lt;b&gt;209&lt;\/b&gt;&lt;br \/&gt;\r\nArray",
+    "created_at": "2026-10-20 09:56:59"
+}

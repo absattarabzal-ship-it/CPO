@@ -1,0 +1,14 @@
+{
+    "personal": {
+        "full_name": "Абдусаттар Абдулхамид",
+        "email": "abzal.abdusattar@student.atu.kz",
+        "phone": "+7 (777) 123-45-67"
+    },
+    "education": {
+        "university": "Алматинский технологический университет (АТУ)",
+        "specialty": "Информационные системы (Группа ИС-24-22)",
+        "graduation_year": "2028"
+    },
+    "skills": "Владеет Pythoon на выскоком уровнем и Java",
+    "created_at": "2026-10-20 09:56:38"
+}

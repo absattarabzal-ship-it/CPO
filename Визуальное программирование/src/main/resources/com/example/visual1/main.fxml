@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.visual1.controller.MainController"
+            prefWidth="850" prefHeight="550">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Файл">
+                    <MenuItem text="Добавить операцию" onAction="#handleNewTransaction" accelerator="Shortcut+N"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Выход" onAction="#handleExit" accelerator="Shortcut+Q"/>
+                </Menu>
+                <Menu text="Помощь">
+                    <MenuItem text="О программе" onAction="#handleAbout"/>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <Button text="➕ Добавить" onAction="#handleNewTransaction"/>
+                <Button text="✏️ Редактировать" onAction="#handleEditTransaction"/>
+                <Button text="❌ Удалить" onAction="#handleDeleteTransaction"/>
+                <Separator/>
+                <Label text="Поиск: "/>
+                <TextField fx:id="searchField" promptText="Поиск по описанию/категории..." prefWidth="200"/>
+                <Label text="Тип: "/>
+                <ComboBox fx:id="filterTypeComboBox" prefWidth="120"/>
+            </ToolBar>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="transactionTable">
+            <columns>
+                <TableColumn fx:id="dateColumn" text="Дата" prefWidth="100"/>
+                <TableColumn fx:id="typeColumn" text="Тип" prefWidth="90"/>
+                <TableColumn fx:id="categoryColumn" text="Категория" prefWidth="130"/>
+                <TableColumn fx:id="amountColumn" text="Сумма (₸)" prefWidth="110"/>
+                <TableColumn fx:id="descriptionColumn" text="Описание" prefWidth="380"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox spacing="20" style="-fx-padding: 10; -fx-background-color: #f4f4f4;">
+            <Label fx:id="statusLabel" text="Готово"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Label fx:id="balanceLabel" style="-fx-font-weight: bold;" text="Баланс: 0.00 ₸"/>
+        </HBox>
+    </bottom>
+</BorderPane>
